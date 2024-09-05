@@ -25,7 +25,7 @@ class Splash : AppCompatActivity() {
         timer.schedule(timerTask, 3000)
     }
     private fun gotoMainActivity() {
-        val intent = Intent(applicationContext, Cadastro::class.java)
+        val intent = Intent(applicationContext, Inicial::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
         finish()

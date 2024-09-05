@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C80000"
+    tools:context=".MenuActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/merenda_toolbar" />
+    <include layout="@layout/base_option" />
+<!--    <include layout="@layout/merenda_timetable_toolbar"/>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="132dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        app:layout_constraint.End_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/autoCompleteTextView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:input_Type="none"-->
+<!--            android:text="English" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/dropdownText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="16dp"-->
+<!--        android:text="Mouse over me"-->
+<!--        android:textSize="18sp"-->
+<!--        tools:layout_editor_absoluteX="41dp"-->
+<!--        tools:layout_editor_absoluteY="98dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/dropdownContent"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="#f9f9f9"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_below="@id/dropdownText"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginTop="8dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hello World!" />-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    <androidx.constraintlayout.widget.Group-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <com.google.android.material.appbar.MaterialToolbar-->
+<!--            android:id="@+id/downToolbar"-->
+<!--            android:layout_width="172dp"-->
+<!--            android:layout_height="235dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="380dp"-->
+<!--            android:background="@drawable/menu_toolbar"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            android:theme="?attr/actionBarTheme"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            tools:ignore="DuplicateIds" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView5"-->
+<!--            android:layout_width="138dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:src="@drawable/comidareal"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/downToolbar"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/downToolbar"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/downToolbar"-->
+<!--            tools:layout_editor_absoluteX="227dp"-->
+<!--            tools:layout_editor_absoluteY="468dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="@string/view_titulo"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15dp"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/downToolbar"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="@string/view_descricao"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15dp"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/downToolbar"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:background="@drawable/button_pedido"-->
+<!--            android:text="@string/selecionar_pedido"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/downToolbar"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView6" />-->
+<!--    </androidx.constraintlayout.widget.Group>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,13 +24,14 @@
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="105dp"
         android:layout_marginEnd="16dp"
         android:background="#cdcdcd"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="165dp"
+        app:layout_constraintTop_toBottomOf="@+id/navbartoolbar2"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <TextView

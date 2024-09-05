@@ -33,7 +33,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MenuActivity"
             android:exported="false" />
         <activity
             android:name=".GestorAlimenticia"

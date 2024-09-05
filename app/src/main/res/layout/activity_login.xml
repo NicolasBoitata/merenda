@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C80000"
+    >
+
+    <include layout="@layout/merenda_toolbar" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/loginToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/menu_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/titleView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="144dp"
+        android:text="@string/title_login"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginToolbar"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar"
+        app:layout_constraintTop_toTopOf="@+id/loginToolbar" />
+
+    <TextView
+        android:id="@+id/txtuser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:text="Usuário"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_senha2"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar" />
+
+    <EditText
+        android:id="@+id/edit_senha2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/button_gestao"
+        android:ems="12"
+        android:hint="@string/edit_email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar"
+        app:layout_constraintTop_toTopOf="@+id/loginToolbar" />
+
+    <TextView
+        android:id="@+id/txtEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:text="Senha"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nome2"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar" />
+
+    <EditText
+        android:id="@+id/edit_nome2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_gestao"
+        android:ems="12"
+        android:hint="@string/edit_username"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_entrar2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_gestao"
+        android:text="@string/bt_entrar"
+        app:layout_constraintStart_toStartOf="@+id/loginToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
