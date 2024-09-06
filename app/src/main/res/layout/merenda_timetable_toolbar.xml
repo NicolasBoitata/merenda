@@ -31,63 +31,61 @@
         tools:layout_editor_absoluteY="1dp" />
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="405dp"
-        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="60dp"
         android:background="#75000000"
         android:backgroundTint="@color/gray"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_early"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginTop="65dp"
-        android:background="@drawable/button_timetable"
-        android:backgroundTint="#0DFFFFFF"
+
         android:text="@string/text_morning"
         android:textColor="@color/black"
+        android:backgroundTint="#FFFFFFFF"
         android:textSize="15dp" />
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="2dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="135dp"
-        android:layout_marginTop="67dp"
+        android:layout_width="5dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="65dp"
         android:background="#75000000"
         android:backgroundTint="@color/gray"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_morning"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="137.50dp"
+        android:layout_width="136dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="137dp"
         android:layout_marginTop="65dp"
-        android:background="@drawable/button_timetable"
-        android:backgroundTint="#0DFFFFFF"
         android:text="@string/text_afternoon"
         android:textColor="@color/black"
+        android:backgroundTint="#FFFFFFFF"
         android:textSize="15dp" />
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="2dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="272.60dp"
-        android:layout_marginTop="67dp"
+        android:layout_width="5dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="274dp"
+        android:layout_marginTop="65dp"
         android:background="#72000000"
         android:backgroundTint="@color/gray" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_afternoon"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="275dp"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="279dp"
         android:layout_marginTop="65dp"
-        android:background="@drawable/button_timetable"
-        android:backgroundTint="#0DFFFFFF"
         android:text="@string/text_pre_afternoon"
         android:textColor="@color/black"
+        android:backgroundTint="#FFFFFFFF"
         android:textSize="15dp" />
 
     </RelativeLayout>

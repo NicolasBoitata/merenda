@@ -8,7 +8,7 @@
     android:background="#C80000"
     >
 
-    <include layout="@layout/merenda_toolbar" />
+    <include layout="@layout/merenda_toolbar_notadd" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/loginToolbar"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_senha2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_entrar2"
+        android:id="@+id/bt_entrar"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -15,6 +15,11 @@
     <string name="text_morning">Cedo</string>
     <string name="text_afternoon">Manhã</string>
     <string name="text_pre_afternoon">Tarde</string>
+    <string name="text_morningsnack">Lanche da Manhã</string>
+    <string name="text_lunch">Almoço</string>
+    <string name="text_pre_afternoonsnack">Lanche da Tarde</string>
+
+
     <string-array name="Horario">
 
         <item>Café da Manhã</item>

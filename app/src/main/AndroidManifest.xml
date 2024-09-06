@@ -21,22 +21,28 @@
         android:theme="@style/Theme.GestorMerenda"
         tools:targetApi="31">
         <activity
-            android:name=".Cadastro"
+            android:name=".Inicial"
             android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".Inicial"
+            android:name=".Cadastro"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".Menu3"
+            android:exported="false" />
+        <activity
+            android:name=".Menu2"
             android:exported="false" />
         <activity
             android:name=".GestorAlimenticia"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Splash"
