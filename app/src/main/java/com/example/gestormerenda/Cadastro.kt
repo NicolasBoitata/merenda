@@ -19,6 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class Cadastro : AppCompatActivity() {
 
+//    Ola
 
     private lateinit var editNome: EditText
     private lateinit var editEmail: EditText
