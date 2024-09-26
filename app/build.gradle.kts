@@ -1,8 +1,8 @@
-import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
+//    id("com.android.application")
 }
 
 android {
@@ -39,11 +39,19 @@ android {
         viewBinding = true
 //        dataBinding = true
     }
-//    viewBinding {
-//        enabled = true
-//    }
+    viewBinding {
+        enable = true
+    }
 }
+//nicolas
 dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+
+    implementation("com.google.firebase:firebase-analytics")
+
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    implementation(platform("com.google.firebase:firebase-auth-ktx:23.0.0"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

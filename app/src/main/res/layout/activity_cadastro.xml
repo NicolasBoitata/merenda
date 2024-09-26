@@ -10,7 +10,6 @@
     android:background="#C80000"
     tools:context=".Cadastro">
 
-
     <include layout="@layout/merenda_toolbar_notadd" />
 
     <com.google.android.material.appbar.MaterialToolbar
