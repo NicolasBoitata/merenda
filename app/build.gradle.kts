@@ -43,8 +43,9 @@ android {
         enable = true
     }
 }
-//nicolas
+
 dependencies {
+
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
 
     implementation("com.google.firebase:firebase-analytics")
@@ -52,6 +53,9 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
 
     implementation(platform("com.google.firebase:firebase-auth-ktx:23.0.0"))
+
+    implementation("com.google.firebase:firebase-auth-ktx")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
