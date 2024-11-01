@@ -11,7 +11,7 @@ interface EnderecoApi {
 //    @POST("food/inserir")
 //    fun inserirFood(@Body food: Food): Call<Void>
 //
-//    @DELETE("food/excluir/{id}")
+//    @DELETE("food/deletar/{id}")
 //    fun excluirFood(@Path("id") id: Int): Call<Void>
 //
 //    @PUT("food/alterar")

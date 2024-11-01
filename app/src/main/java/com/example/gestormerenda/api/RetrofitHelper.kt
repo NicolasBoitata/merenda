@@ -5,7 +5,7 @@ package com.example.gestormerenda.api
 
 object RetrofitHelper {
 
-    //private const val BASE_URL = "http://10.86.141.2/api/"
+    //private const val BASE_URL = "http://10.143.12.58/api/"
     //    private const val BASE_URL = "http://192.168.15.5/api/"
     private const val BASE_URL = "http://localhost/api/"
 
