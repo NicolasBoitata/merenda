@@ -3,15 +3,30 @@ package com.example.gestormerenda;
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
+import com.example.gestormerenda.adapter.FoodAdapter
+import com.example.gestormerenda.model.Food
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Menu : AppCompatActivity() {
+
+    private val db = FirebaseFirestore.getInstance()
+    private val alimentos = mutableListOf<Food>()
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: FoodAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        // Usando findViewById para obter a referência do botão
+        // Inicializar RecyclerView e Adapter
+        recyclerView = findViewById(R.id.recyclerViewAlimentos)
+        adapter = FoodAdapter(alimentos)
+        recyclerView.adapter = adapter
+
+        // Configurar botões
         val btnMorning: Button = findViewById(R.id.btn_morning)
         val btnAfternoon: Button = findViewById(R.id.btn_afternoon)
 
@@ -23,8 +38,58 @@ class Menu : AppCompatActivity() {
             val navegarTerceiraTela = Intent(this, Menu3::class.java)
             startActivity(navegarTerceiraTela)
         }
+
+        // Recuperar alimentos do Firestore
+        db.collection("alimentos")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    val food = document.toObject(Food::class.java)
+                    alimentos.add(food)
+                }
+                adapter.notifyDataSetChanged()
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(this, "Erro ao carregar alimentos: ${exception.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 }
+
+
+//class Menu : AppCompatActivity() {
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_menu)
+//
+//        // Usando findViewById para obter a referência do botão
+//        val btnMorning: Button = findViewById(R.id.btn_morning)
+//        val btnAfternoon: Button = findViewById(R.id.btn_afternoon)
+//
+//        btnMorning.setOnClickListener {
+//            val navegarSegundaTela = Intent(this, Menu2::class.java)
+//            startActivity(navegarSegundaTela)
+//        }
+//        btnAfternoon.setOnClickListener {
+//            val navegarTerceiraTela = Intent(this, Menu3::class.java)
+//            startActivity(navegarTerceiraTela)
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    private lateinit var binding: MerendaTimetableToolbarBinding
 //

@@ -57,25 +57,25 @@ class Login : AppCompatActivity() {
         }
     }
 
-    private fun classifyUserByEmailDomain(email: String) {
-        val domain = email.substringAfter("@")
-
-        if (domain == "adm.com") {
-            Toast.makeText(this, "Bem-vindo, Administração!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(
-                applicationContext,
-                GestorAlimenticia::class.java
-            )
-            startActivity(intent)
-        } else {
-            Toast.makeText(this, "Bem-vindo, Aluno!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(
-                applicationContext,
-                Menu::class.java
-            )
-            startActivity(intent)
-        }
-    }
+//    private fun classifyUserByEmailDomain(email: String) {
+//        val domain = email.substringAfter("@")
+//
+//        if (domain == "adm.com") {
+//            Toast.makeText(this, "Bem-vindo, Administração!", Toast.LENGTH_SHORT).show()
+//            val intent = Intent(
+//                applicationContext,
+//                GestorAlimenticia::class.java
+//            )
+//            startActivity(intent)
+//        } else {
+//            Toast.makeText(this, "Bem-vindo, Aluno!", Toast.LENGTH_SHORT).show()
+//            val intent = Intent(
+//                applicationContext,
+//                Menu::class.java
+//            )
+//            startActivity(intent)
+//        }
+//    }
 
     private fun iniciarComponentes() {
         emailFields = findViewById(R.id.emailFields)

@@ -8,7 +8,7 @@ data class Food(
 
     val Title: String,
     val Description: String,
-
+    val imagemUri: String,
     val matricula: String
 )
 

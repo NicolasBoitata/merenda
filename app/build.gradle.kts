@@ -1,8 +1,10 @@
+import org.gradle.kotlin.dsl.add
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.gms.google-services")
-//    id("com.android.application")
+    id("kotlin-kapt")
 }
 
 android {
@@ -17,6 +19,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    tasks.withType<JavaCompile> {
+        options.compilerArgs.add("--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED")
     }
 
     buildTypes {
@@ -66,4 +72,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    kapt ("com.github.bumptech.glide:compiler:4.12.0")
+
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.10")
+    implementation("androidx.core:core-ktx:1.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
+//    ./gradlew clean
